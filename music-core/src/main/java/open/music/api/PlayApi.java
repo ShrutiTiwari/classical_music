@@ -23,14 +23,14 @@ import com.aqua.music.model.cyclicset.CyclicFrequencySet.PermuatationsGenerator;
 import com.aqua.music.model.cyclicset.SymmetricalSet;
 
 /**
+ * Visibility: Published class i.e. used by other jars.  
  * @author "Shruti Tiwari"
  * 
  */
 public class PlayApi {
-	private String defaultInstrument;
+	private final String defaultInstrument;
 	private final Logger logger = LoggerFactory.getLogger(PlayApi.class);
 	private final List<Playable> playablePlainThaats;
-
 	private final List<Playable> playableSongs;
 	private StateDependentUi stateDependentUi;
 
