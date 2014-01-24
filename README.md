@@ -1,7 +1,7 @@
 classical_music
 ===============
 
-application for practicing indian classical music fundamentals.
+An application for practicing indian classical music fundamentals.
 
 <b>Build Instructions:</b>
 This is a maven project containing java modules. <br>
