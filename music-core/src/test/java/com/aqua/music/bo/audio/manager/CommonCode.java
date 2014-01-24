@@ -17,7 +17,7 @@ import com.aqua.music.model.core.Frequency;
  * 
  */
 public class CommonCode {
-	private static final StateDependentUi stateDependentUi = new MyStateDependentUi();
+	private static final StateDependentUi stateDependentUi = new SimpleStateDependentUi();
 
 	public static void initialize() {
 		SingletonFactory.PLAY_API.initialize(stateDependentUi, DesktopConfig.DYNAMIC);
@@ -27,7 +27,7 @@ public class CommonCode {
 		SingletonFactory.PLAY_API.initialize(stateDependentUi, DesktopConfig.STATIC);
 	}
 
-	static class MyStateDependentUi implements StateDependentUi {
+	static class SimpleStateDependentUi implements StateDependentUi {
 		private final List<StartEndPointChangeListener> listeners = new ArrayList<StartEndPointChangeListener>();
 
 		@Override

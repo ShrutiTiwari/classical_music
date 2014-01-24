@@ -23,7 +23,7 @@ import com.aqua.music.model.core.ClassicalNote;
 import com.aqua.music.model.core.Frequency;
 
 public class AudioLifeCycleManagerTest {
-	//@Test
+	@Test
 	public void testFrequencyPlayer() throws LineUnavailableException {
 		CommonCode.initialize();
 		Frequency[] sample = new Frequency[] { S, R, G, M, P, D, N, S3 };
@@ -31,7 +31,7 @@ public class AudioLifeCycleManagerTest {
 		AudioPlayerFacade.SYNCHRONOUS_PLAYER.play(asList, 1);
 	}
 
-	@Test
+	//@Test
 	public void testVlcPlayer() {
 		List<Frequency> frequencyList = new ArrayList<Frequency>();
 		frequencyList.add(ClassicalNote.D);

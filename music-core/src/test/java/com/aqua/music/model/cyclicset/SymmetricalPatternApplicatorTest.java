@@ -38,7 +38,7 @@ public class SymmetricalPatternApplicatorTest {
 		String[] actual = freqSeq.asString().split(patternApplicator.NEW_LINE_SEP);
 		
 		assertEquals("R_S	MR_	PM	N_P	S3N_", actual[0]);
-		assertEquals("N_S3	PN_	MP	R_M	SR_	N1_S", actual[1]);
+		assertEquals("N_S3	PN_	MP	R_M	SR_	N_1S", actual[1]);
 	}
 
 	@Test
@@ -48,7 +48,7 @@ public class SymmetricalPatternApplicatorTest {
 		String[] actual = freqSeq.asString().split(patternApplicator.NEW_LINE_SEP);
 		//System.out.println(freqSeq.asString());
 		assertEquals("MR_S	PMR_	N_PM	S3N_P", actual[0]);
-		assertEquals("PN_S3	MPN_	R_MP	SR_M	N1_SR_	P1N1_S", actual[1]);
+		assertEquals("PN_S3	MPN_	R_MP	SR_M	N_1SR_	P1N_1S", actual[1]);
 	}
 
 	
@@ -58,7 +58,7 @@ public class SymmetricalPatternApplicatorTest {
 		CyclicSequence freqSeq = patternApplicator.initializeWith(testset);
 		String[] actual = freqSeq.asString().split(patternApplicator.NEW_LINE_SEP);
 		assertEquals("MSR_	PR_M	N_MP	S3PN_", actual[0]);
-		assertEquals("PS3N_	MN_P	R_PM	SMR_	N1_R_S", actual[1]);
+		assertEquals("PS3N_	MN_P	R_PM	SMR_	N_1R_S", actual[1]);
 	}
 
 	

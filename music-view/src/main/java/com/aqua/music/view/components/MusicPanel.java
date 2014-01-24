@@ -44,12 +44,13 @@ abstract class MusicPanel {
 			mainPanel.add(leftPanel2);
 			mainPanel.add(leftPanelalert);
 			mainPanel.add(leftPanel3);
-			this.alertLabel = UiLables.CURRENT_CUSTOMIZATION.newLabel();
+			/**supressing unfinished work*/
+			/*this.alertLabel = UiLables.CURRENT_CUSTOMIZATION.newLabel();
 			alertLabel.setForeground(Color.RED);
 			alertLabel.setVisible(false);
 			this.customizationLabel = UiLables.CURRENT_CUSTOMIZATION.newLabel();
 			leftPanelalert.add(alertLabel);
-			leftPanel3.add(customizationLabel);
+			leftPanel3.add(customizationLabel);*/
 			
 		}
 		mainPanel.add(middlePanel);

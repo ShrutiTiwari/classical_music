@@ -26,8 +26,8 @@ public class UiTabbedPane {
 		pracitceTabbedPane.addTab(MusicPracticePanelType.PATTERN.title(), new MusicPanelForPractice(MusicPracticePanelType.PATTERN,stateDependentUi,firstThaat, PermuatationsGenerator.PAIR).getPanel());
 		pracitceTabbedPane.addTab(MusicPracticePanelType.SONG.title(), new MusicPanelForPractice(MusicPracticePanelType.SONG,stateDependentUi).getPanel());
 		mainTabbedPane.addTab(UiTexts.TITLE_PRACTICE, pracitceTabbedPane);
-		
-		mainTabbedPane.addTab(TITLE_PUZZLES, new MusicPanelForQuiz(stateDependentUi,firstQuizLevel).getPanel());
+		/**supressing unfinished work*/		
+		//mainTabbedPane.addTab(TITLE_PUZZLES, new MusicPanelForQuiz(stateDependentUi,firstQuizLevel).getPanel());
 
 		mainTabbedPane.setOpaque(true);
 		pracitceTabbedPane.setOpaque(true);

@@ -131,14 +131,15 @@ class MusicPanelForPractice extends MusicPanel {
 	}
 
 	private void addCustomizationControl() {
-		final NoteFragementAndOctaveActionListener noteFragmentOctaveListener = new NoteFragementAndOctaveActionListener(this,
+		/**supressing unfinished work*/
+		/*final NoteFragementAndOctaveActionListener noteFragmentOctaveListener = new NoteFragementAndOctaveActionListener(this,
 				stateDependentUi);
 		ClassicalNote[] displayClassicalNotes = generateDisplayList();
 		for (JComboBox each : new JComboBox[] { UiDropdown.noteFragmentDropDown(), UiDropdown.octaveDropDown(),
 				UiDropdown.startNoteDropDown(displayClassicalNotes), UiDropdown.endNoteDropDown(displayClassicalNotes) }) {
 			each.addActionListener(noteFragmentOctaveListener);
 			addExtraTopControl2(each);
-		}
+		}*/
 	}
 
 	private JTextField defaultTextField() {

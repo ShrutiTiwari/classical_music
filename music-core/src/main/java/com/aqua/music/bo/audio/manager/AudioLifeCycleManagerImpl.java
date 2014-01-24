@@ -17,7 +17,8 @@ import com.aqua.music.bo.audio.player.AudioPlayer;
 class AudioLifeCycleManagerImpl implements AudioLifeCycleManager, AudioPlayRightsManager {
 	private AudioPlayer currentAudioPlayer;
 
-	private volatile int tempoMultipler = 0;
+	/**supressing unfinished work*/
+	private volatile int tempoMultipler = 5;
 	private final AtomicBoolean pauseCurrentPlay;
 	private final Lock permitToPlay;
 	private final AtomicBoolean stopCurrentPlay;
