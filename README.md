@@ -1,7 +1,7 @@
 classical_music
 ===============
 
-repository for playing the indian classical music concepts.
+application for practicing indian classical music fundamentals.
 
 <b>Build Instructions:</b>
 This is a maven project containing java modules. <br>
