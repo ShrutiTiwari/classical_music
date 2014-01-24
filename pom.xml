@@ -150,7 +150,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 	<!-- <reporting> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
@@ -160,7 +160,7 @@
 		<connection>scm:svn:https://github.com/ShrutiTiwari/classical_music</connection>
 		<developerConnection>scm:svn:https://github.com/ShrutiTiwari/classical_music</developerConnection>
 	</scm>
-	
+
 	<modules>
 		<module>music-core</module>
 		<module>music-view</module>
